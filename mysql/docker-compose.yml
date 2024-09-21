@@ -7,7 +7,7 @@ services:
       # 时区上海
       TZ: Asia/Shanghai
       # root 密码
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: z6090976653
       # 初始化数据库
       MYSQL_DATABASE: my-db
     ports:
