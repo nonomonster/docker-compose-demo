@@ -76,7 +76,7 @@ systemctl start docker
 [ -f /etc/docker/daemon.json ] || touch /etc/docker/daemon.json
 cat >>/etc/docker/daemon.json <<EOF
 {
-"registry-mirrors": ["https://gdhauhuq.mirror.aliyuncs.com"],
+"registry-mirrors": ["https://docker.m.daocloud.io"],
 "log-driver":"json-file",
 "log-opts":{"max-size" :"1000m","max-file":"5"}
 }
