@@ -12,10 +12,12 @@ services:
       # 以单一节点模式启动
       discovery.type: single-node
       ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+      ELASTIC_PASSWORD : z6090976653
     volumes:
       - ./elasticsearch/plugins:/usr/share/elasticsearch/plugins
       - ./elasticsearch/data:/usr/share/elasticsearch/data
       - ./elasticsearch/logs:/usr/share/elasticsearch/logs
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     # 选择host模式，提升网络性能和降低部署成本（可根据需要进行调整）
     network_mode: "host"
 

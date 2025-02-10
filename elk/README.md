@@ -14,6 +14,7 @@ cd elk
 chmod 777 ./elasticsearch/data
 chmod 777 ./elasticsearch/logs
 chmod 777 ./elasticsearch/plugins
+chmod 777 ./elasticsearch/config
 ```
 
 ### 1.3 启动容器（如果不需要部署整个elk，按需调整启动命令即可）

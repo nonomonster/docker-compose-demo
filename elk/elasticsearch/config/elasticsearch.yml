@@ -1,0 +1,9 @@
+# 集群名称，默认是 "elasticsearch"
+cluster.name: elasticsearch
+# 节点名称，默认是随机生成的UUID
+node.name: node-1
+network.host: 0.0.0.0
+xpack.security.enabled: true
+xpack.security.transport.ssl.enabled: true
+http.cors.enabled: true  # 允许跨域访问（如使用 Elasticsearch-head）:cite[6]:cite[7]
+http.cors.allow-origin: "*"
